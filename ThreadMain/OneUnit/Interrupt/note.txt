@@ -1,0 +1,13 @@
+Java有3种方法可以终止正在运行的线程:
+	1.退出标志,使线程正常退出,也就是当run方法完成后线程终止
+	2.使用stop方法强行终止线程，过期的方法，使用它们可能产生不可预测的结果
+	3.使用interrupt方法中断线程
+	
+	
+public static boolean interrupted():测试当前线程是否中断
+	执行后具有将状态标志置清除为false的功能
+public boolean isInterrupted()：测试线程是否已经中断
+	不清除状态标志
+
+
+	
